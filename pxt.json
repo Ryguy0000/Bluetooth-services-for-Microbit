@@ -1,7 +1,11 @@
 {
     "name": "pxt-custom-ble",
     "version": "0.0.1",
-    "description": "Custom BLE Service and Advertiser for microbit",
+    "description": "Custom BLE Service and Advertiser",
+    "dependencies": {
+        "core": "*",
+        "bluetooth": "*"
+    },
     "files": [
         "main.ts",
         "custom_ble.cpp"
@@ -9,13 +13,16 @@
     "supportedTargets": [
         "microbit"
     ],
-    "dependencies": {
-        "core": "*"
-    },
     "yotta": {
         "config": {
+            "DEVICE_BLE": 1,
             "MICROBIT_BLE_ENABLED": 1,
-            "MICROBIT_BLE_OPEN": 1
+            "microbit-dal": {
+                "bluetooth": {
+                    "enabled": 1,
+                    "open": 1
+                }
+            }
         }
     }
 }
