@@ -1,5 +1,5 @@
 {
-    "name": "pxt-custom-ble",
+    "name": "UUID Changes",
     "version": "0.0.1",
     "description": "Custom BLE Service and Advertiser",
     "dependencies": {
