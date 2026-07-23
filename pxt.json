@@ -4,7 +4,7 @@
     "dependencies": {
         "core": "*",
         "microphone": "*",
-        "microbit-pxt-blehid - Copy": "github:bsiever/microbit-pxt-blehid#v0.1.0"
+        "bluetooth": "*"
     },
     "files": [
         "main.blocks",
