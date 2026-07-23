@@ -8,7 +8,7 @@
         "microphone": "*"
     },
     "files": [
-        "main.ts",
+        "Pieces.ts",
         "custom_ble.cpp"
     ],
     "targetVersions": {
