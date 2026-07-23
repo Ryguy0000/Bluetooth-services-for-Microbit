@@ -1,25 +1,21 @@
 {
-    "name": "bluetooth fun 2",
-    "description": "",
-    "dependencies": {
-        "core": "*",
-        "microphone": "*",
-        "bluetooth": "*"
-    },
+    "name": "pxt-custom-ble",
+    "version": "0.0.1",
+    "description": "Custom BLE Service and Advertiser for microbit",
     "files": [
-        "main.blocks",
         "main.ts",
-        "README.md"
+        "custom_ble.cpp"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
-    "targetVersions": {
-        "target": "9.0.5",
-        "targetId": "microbit"
-    },
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "dependencies": {
+        "core": "*"
+    },
+    "yotta": {
+        "config": {
+            "MICROBIT_BLE_ENABLED": 1,
+            "MICROBIT_BLE_OPEN": 1
+        }
+    }
 }
