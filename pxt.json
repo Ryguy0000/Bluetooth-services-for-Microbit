@@ -4,15 +4,21 @@
     "description": "Custom BLE Service and Advertiser",
     "dependencies": {
         "core": "*",
-        "bluetooth": "*"
+        "bluetooth": "*",
+        "microphone": "*"
     },
     "files": [
         "main.ts",
         "custom_ble.cpp"
     ],
+    "targetVersions": {
+        "target": "9.0.5",
+        "targetId": "microbit"
+    },
     "supportedTargets": [
         "microbit"
     ],
+    "preferredEditor": "tsprj",
     "yotta": {
         "config": {
             "DEVICE_BLE": 1,
